@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Cart | ECO CARD 🌱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+  <h1>ECO CARD 🌱</h1>
+  <p class="tagline">
+    Review your eco-friendly choices before checkout
+  </p>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="cart.html">Cart</a>
+  <a href="login.html">Login</a>
+  <a href="register.html">Register</a>
+</nav>
+
+<!-- CART SECTION -->
+<section class="cart-page">
+  <h2>Your Shopping Cart 🛒</h2>
+
+  <!-- Cart Items -->
+  <div id="cart-items"></div>
+
+  <!-- Total -->
+  <div id="total-display"></div>
+
+  <!-- Payment -->
+  <div id="payment-section" style="display:none;">
+    <h3>Select Payment Method</h3>
+
+    <select id="payment-method">
+      <option value="Cash on Delivery">Cash on Delivery</option>
+      <option value="Online Payment">Online Payment</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 ECO CARD | Thank you for choosing sustainability 🌍</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
